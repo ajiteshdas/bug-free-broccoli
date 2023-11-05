@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+    <script type="text/javascript" src="{{ url_for('static',filename='scripts/script.js')}}"></script>
+</head>
+<body>
+    <h1>
+        Welcome to the test page. Please subscribe to the wesbite
+    </h1>
+
+    <h2>Submit your Info</h2>
+
+    <form action="/submit" method="post">
+        <div>
+            <label for="Science">Science</label><br>
+            <input type="text" id="science" name="science" value="0"><br>
+            <label for="Maths">Mathematics</label><br>
+            <input type="text" id="maths" name="maths" value="0"><br>
+            <label for="Compsci">Computer Science</label><br>
+            <input type="text" id="compsci" name="compsci" value="0"><br>
+            <label for="Datascience">Data Science</label><br>
+            <input type="text" id="datascience" name="datascience" value="0"><br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <form>
+        <div>
+            <label for="job_url">LinkedIn Job URL</label>
+            <input type="url" id="job_url" name="job_url">
+        </div>
+        <div class="form-group">
+            <label for="resume_file">Upload your resume</label>
+            <input type="file" class="resume_file" id="resume_file">
+          </div>
+    </form>
+    
+
+    
+</body>
+</html>
